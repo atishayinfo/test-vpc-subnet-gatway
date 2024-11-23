@@ -7,6 +7,6 @@ resource "aws_internet_gateway" "gw" {
 }
 
 output "internet_gateway_id" {
-  value = aws_internet_gateway.gw.id
+  value = module.internet_gateway.internet_gateway_id
 }
     
