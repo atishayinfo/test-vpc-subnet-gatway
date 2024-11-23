@@ -5,8 +5,3 @@ resource "aws_internet_gateway" "gw" {
     Name = var.igw_name
   }
 }
-
-output "internet_gateway_id" {
-  value = module.internet_gateway.internet_gateway_id
-}
-    
